@@ -2,9 +2,9 @@
 
 This project monitors electricity metrics in Norway including **carbon intensity**, **renewable share**, and **day-ahead electricity price**.
 
-Utilizing **FastAPI exporter**, **Prometheus**, and **Grafana**. For building scaper and dashboard vizualizer
+It ases a **FastAPI exporter**, **Prometheus**, and **Grafana**. to build a scraping, monitoring, and visualization stack.
 
-It is designed for observability, visualization, and alerting of electricity grid data.
+The system is designed for observability, visualization, and alerting of electricity grid data.
 
 ---
 
@@ -68,7 +68,8 @@ The provided dashboard JSON uses a **templated data source variable** (`${DS_PRO
 3. Import the dashboard:
    - Go to **Dashboards → Import → Upload JSON**
    - Select `grafana/dashboards/electricity-dashboard.json`
-   - Click **Edit - > Settings -> Variables -> DS_PROMETHEUS** under Data source options dropdown, select the newly created data source (this sets `DS_PROMETHEUS`). Or in the **Prometheus data source dropdown (dashboard overview)**
+   - Click **Edit - > Settings -> Variables** select DS_PRMETHEUS under Data source options dropdown, select the newly created data source (this sets `DS_PROMETHEUS`).
+   - Save the dashboard
 
 ## APIs
 
