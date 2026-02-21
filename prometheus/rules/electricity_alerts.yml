@@ -1,0 +1,11 @@
+groups:
+  - name: electricity-exporter
+    rules:
+      - alert: ElectricityExporterDown
+        expr: electricity_exporter_up == 0
+        for: 3m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Electricity exporter is down"
+          description: "Exporter failed to update metrics for 3 minutes."
