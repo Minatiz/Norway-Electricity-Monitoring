@@ -33,6 +33,10 @@ This project requires an **API key** from [ElectricityMap](https://api.electrici
 2. Create a free account
 3. Copy your API key
 4. Add it to a `.env` file in the project root:
+   > **Note**:
+   >
+   > - ElectricityMap provides a **Sandbox API key** (uses generated/demo data).
+   > - You can get a **Production API key** with real data for a 14-day trial.
 
 ```env
 API_KEY_ELECTRICITYMAP=your_api_key_here
