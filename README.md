@@ -2,7 +2,7 @@
 
 This project monitors electricity metrics in Norway including **carbon intensity**, **renewable share**, and **day-ahead electricity price**.
 
-It ases a **FastAPI exporter**, **Prometheus**, and **Grafana**. to build a scraping, monitoring, and visualization stack.
+It uses a **FastAPI exporter**, **Prometheus**, and **Grafana**. to build a scraping, monitoring, and visualization stack.
 
 The system is designed for observability, visualization, and alerting of electricity grid data.
 
