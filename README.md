@@ -23,6 +23,21 @@ The system is designed for observability, visualization, and alerting of electri
 
 ---
 
+## Grafana Dashboard Overview
+
+The Grafana dashboard provides real-time monitoring of electricity metrics across Norwegian zones.
+
+It visualizes:
+
+- Exporter health status
+- Renewable energy share (%)
+- Day-ahead electricity price (NOK/kWh)
+- Carbon intensity (gCO₂eq/kWh)
+
+![Grafana Dashboard Overview](asset/dashboard-overview.png)
+
+---
+
 ## ElectricityMap API Key
 
 This project requires an **API key** from [ElectricityMap](https://api.electricitymap.org/).
