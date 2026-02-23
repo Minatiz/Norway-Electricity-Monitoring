@@ -78,7 +78,7 @@
       "targets": [
         { "expr": "electricity_exporter_up", "legendFormat": "Status", "refId": "A", "instant": false }
       ],
-      "title": "Electricity exporter service",
+      "title": "Exporter Health Status",
       "type": "timeseries"
     },
     {
@@ -122,7 +122,7 @@
         "tooltip": { "hideZeros": false, "mode": "single", "sort": "none" }
       },
       "targets": [ { "expr": "grid_renewable_percentage", "legendFormat": "{{zone}}", "refId": "A" } ],
-      "title": "Renewable Share (%)",
+      "title": "Renewable Energy Share (%)",
       "type": "timeseries"
     },
     {
@@ -166,7 +166,7 @@
         "tooltip": { "hideZeros": false, "mode": "single", "sort": "none" }
       },
       "targets": [ { "expr": "electricity_price_nok_per_kwh", "legendFormat": "{{zone}}", "refId": "A" } ],
-      "title": "Electricity Price (NOK/kWh)",
+      "title": "Day-Ahead Electricity Price (NOK/kWh)",
       "type": "timeseries"
     },
     {
@@ -210,7 +210,7 @@
         "tooltip": { "hideZeros": false, "mode": "single", "sort": "none" }
       },
       "targets": [ { "expr": "grid_carbon_intensity_stats", "legendFormat": "{{zone}}", "refId": "A" } ],
-      "title": "Carbon Intensity (gCO2eq/kWh)",
+      "title": "Grid Carbon Intensity (gCO₂eq/kWh)",
       "type": "timeseries"
     }
   ],

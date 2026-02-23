@@ -9,3 +9,21 @@ groups:
         annotations:
           summary: "Electricity exporter is down"
           description: "Exporter failed to update metrics for 3 minutes."
+
+      - alert: ElectricityPriceSpike
+        expr: electricity_price_nok_per_kwh > 2.0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Electricity price spike detected"
+          description: "Electricity price above 2.0 NOK/kWh for more than 1 minutes in zone {{ $labels.zone }}."
+
+      - alert: HighCarbonIntensity
+        expr: grid_carbon_intensity_stats > 150
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High carbon intensity detected"
+          description: "Carbon intensity above 150 gCO₂eq/kWh for more than 3 minutes in zone {{ $labels.zone }}."
